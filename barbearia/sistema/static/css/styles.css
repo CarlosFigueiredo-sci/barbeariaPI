@@ -10,6 +10,7 @@ body {
     line-height: 1.6;
     padding: 20px;
     background-color: #f4f4f4;
+    background-image: url("../assets/images/background2.webp");
 }
 
 header {
@@ -48,5 +49,5 @@ footer {
     text-align: center;
     margin-top: 20px;
     font-size: 0.9em;
-    color: #777;
+    color: #fff;
 }
