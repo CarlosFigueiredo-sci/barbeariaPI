@@ -1,6 +1,56 @@
 {% extends 'sistema/base.html' %}
-{% block title %}Serviços{% endblock %}
+
+{% block title %}
+    Serviços
+{% endblock %}
+
 {% block content %}
-<h2>Serviços Disponíveis</h2>
-<p>Listagem dos serviços...</p>
+    <div class="services-container">
+        <div>
+            <h2>Serviços Disponíveis</h2>
+
+            <ul class="services-list">
+                <li class="service-item">
+                    <span class="service-name">Corte Masculino</span>
+                    <span class="service-price">R$ 40,00</span>
+                </li>
+                <li class="service-item">
+                    <span class="service-name">Barba</span>
+                    <span class="service-price">R$ 30,00</span>
+                </li>
+                <li class="service-item">
+                    <span class="service-name">Corte Infantil</span>
+                    <span class="service-price">R$ 30,00</span>
+                </li>
+                <li class="service-item">
+                    <span class="service-name">Sobrancelha</span>
+                    <span class="service-price">R$ 15,00</span>
+                </li>
+                <li class="service-item">
+                    <span class="service-name">Pigmentação de Barba</span>
+                    <span class="service-price">R$ 60,00</span>
+                </li>
+                <li class="service-item">
+                    <span class="service-name">Relaxamento Capilar</span>
+                    <span class="service-price">R$ 80,00</span>
+                </li>
+                <li class="service-item">
+                    <span class="service-name">Corte + Barba</span>
+                    <span class="service-price">R$ 60,00</span>
+                </li>
+            </ul>
+        </div>
+        <div class="images-container">
+            <img
+                src="../../static/assets/images/barba.avif"
+                alt="Imagem 1"
+                class="image-overlay image1"
+            />
+            <img
+                src="../../static/assets/images/cabelo.avif"
+                alt="Imagem 2"
+                class="image-overlay image2"
+            />
+        </div>
+    </div>
 {% endblock %}
