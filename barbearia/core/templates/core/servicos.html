@@ -1,0 +1,17 @@
+<!-- core/templates/core/servicos.html -->
+{% extends 'core/base.html' %}
+
+{% block title %}Serviços{% endblock %}
+
+{% block content %}
+    <h2>Nossos Serviços</h2>
+    <ul>
+        {% for servico in servicos %}
+            <li>
+                <h3>{{ servico.nome }}</h3>
+                <p>{{ servico.descricao }}</p>
+                <p>Preço: R$ {{ servico.preco }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

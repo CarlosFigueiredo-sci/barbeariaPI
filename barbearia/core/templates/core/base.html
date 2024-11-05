@@ -1,0 +1,31 @@
+<!-- core/templates/core/base.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Barbearia{% endblock %}</title>    
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>BarbVesp</h1>
+        <nav>
+            <a href="{% url 'home' %}" class="link">Home</a>
+            <a href="{% url 'servicos' %}" class="link">Serviços</a>
+            {% if user.is_authenticated %}
+                <a href="{% url 'agendar' %}" class="link">Agendar</a>
+                <a href="{% url 'logout' %}" class="link">Logout</a>
+            {% else %}
+                <a href="{% url 'login' %}" class="link">Login</a>
+            {% endif %}
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 BarbVesp</p>
+    </footer>
+</body>
+</html>

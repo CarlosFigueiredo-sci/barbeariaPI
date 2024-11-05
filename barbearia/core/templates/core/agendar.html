@@ -1,0 +1,13 @@
+<!-- core/templates/core/agendar.html -->
+{% extends 'core/base.html' %}
+
+{% block title %}Agendar Serviço{% endblock %}
+
+{% block content %}
+    <h2>Agendar um Serviço</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Confirmar Agendamento</button>
+    </form>
+{% endblock %}

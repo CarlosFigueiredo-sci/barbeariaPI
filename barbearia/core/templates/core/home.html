@@ -1,0 +1,10 @@
+<!-- core/templates/core/home.html -->
+{% extends 'core/base.html' %}
+
+{% block title %}Página Inicial{% endblock %}
+
+{% block content %}
+    <h2>Bem-vindo à Barbearia</h2>
+    <p>Oferecemos os melhores serviços para cuidar do seu visual. Confira nossos serviços!</p>
+    <a href="{% url 'servicos' %}" class="btn">Ver Serviços</a>
+{% endblock %}
