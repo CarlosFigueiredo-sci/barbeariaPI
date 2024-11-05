@@ -7,6 +7,7 @@
 
 ## Instruções de execução (Localmente | Windows)
 1. Baixe o projeto</h3>
+> Pré requisitos: Instalar o python, que pode ser baixado [Aqui](https://www.python.org/downloads/)
 * Crie um ambiente virtual </br>
 ~~~
  python -m venv myenv
