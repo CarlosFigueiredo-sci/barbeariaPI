@@ -12,13 +12,13 @@
 ~~~
  python -m venv myenv
 ~~~
-* Instale o Django </br>
-~~~
-pip install django
-~~~
 * Ative o ambiente </br>
 ~~~
  myenv\Scripts\activate
+~~~
+* Instale o Django </br>
+~~~
+pip install django
 ~~~
 --------------------------------
 2. Navegue até a pasta do projeto
